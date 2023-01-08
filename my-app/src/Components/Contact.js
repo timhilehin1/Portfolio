@@ -5,9 +5,9 @@ import { HiOutlineLocationMarker} from "react-icons/hi";
 function Contact(){
 
 
-    // useEffect(()=>{
-    //     window.scrollTo(0, 0);
-    // },[])
+    useEffect(()=>{
+        window.scrollTo(0, 0);
+    },[])
 
     return (
 
@@ -20,7 +20,7 @@ function Contact(){
      <div className="contact">
       <aside>
         <div className="email d-flex gap-3">
-           <p className="" style={{fontSize:"2rem"}}><AiOutlineMail/></p>
+           <p className="" style={{fontSize:"2rem", color:"#AB8000"}}><AiOutlineMail/></p>
             <div className="">
             <h5>E-mail</h5>
             <p >timilehinoladapo0@gmail.com</p>
@@ -28,7 +28,7 @@ function Contact(){
         </div>
 
         <div className="location d-flex gap-3">
-           <p className="" style={{fontSize:"2rem"}}><HiOutlineLocationMarker/></p>
+           <p className="" style={{fontSize:"2rem", color:"#AB8000"}}><HiOutlineLocationMarker/></p>
             <div className="">
             <h5>Location</h5>
             <p>Lagos, Nigeria</p>
@@ -45,14 +45,14 @@ function Contact(){
           <input  className="input w-100" type="email" name="email" placeholder="Email"/>
           </div>
           <div className="">
-          <input  className="input w-100" type="text" name="project" placeholder="Project Description"/>
+          <input  className="input w-100" type="text" name="Phone" placeholder="Phone Number"/>
           </div>
 
           <div className="">
-          <textarea name="message" row="50"  className="mt-3 textarea"  placeholder="Message "/>
+          <textarea name="message" row="50"  className="mt-3 textarea"  placeholder="Project Description"/>
           </div>
 
-         <button type="submit" className="send contact-btn mt-3">Send Message <AiOutlineSend/> </button>
+         <button type="submit" className="send contact-btn-lightmode mt-3">Send Message <AiOutlineSend/> </button>
       </form>
 
       </div>
@@ -64,20 +64,3 @@ function Contact(){
 export default Contact
 
 
-{/* <form action="https://formsubmit.co/efa401d429bb2dd3a2032235697b1beb" method="POST">
-<div className="">
-<input className="input w-100" type="text" name="name" placeholder="Name"/>
-</div>
-<div className="">
-<input  className="input w-100" type="email" name="email" placeholder="Email"/>
-</div>
-<div className="">
-<input  className="input w-100" type="text" name="project" placeholder="Project Description"/>
-</div>
-
-<div className="">
-<textarea name="message" rows="10" cols="40" className="mt-3"  placeholder="Message "/>
-</div>
-
-<button type="submit" className="send contact-btn mt-3">Send Message <AiOutlineSend/> </button>
-</form> */}
