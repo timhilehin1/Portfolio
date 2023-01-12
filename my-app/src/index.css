@@ -322,7 +322,6 @@ box-shadow: 0 0 5px #999;
 .bottom-content-lightmode{
   background-color: #ffffff;
   border: 1px solid #AB8000;
-  /* transform: translateY(-170px); */
   transform: translateY(1000%);
   overflow: hidden;
   position: fixed;
@@ -338,6 +337,79 @@ box-shadow: 0 0 5px #999;
 .textarea{
   width: 100%;
   height: 200px;
+}
+
+.experience{
+  cursor: pointer;
+}
+
+.details{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  width: 90%;
+}
+
+.container-effect{
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+}
+
+.circle{
+  width: 13rem;
+  height: 13rem;
+  border: thick solid white;
+  border-radius: 50%;
+  animation: anim 10s infinite;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.circle-lightmode{
+  border: thick solid #AB8000;
+}
+
+@keyframes anim{
+
+  from{
+      transform: rotateY(-360deg) rotateZ(-360deg);
+  }
+
+  to{
+      transform: rotateY(360deg) rotateZ(360deg);
+  }
+}
+
+.circle>div{
+  width: 13rem;
+  height: 13rem;
+  border: thick solid white;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.circle-lightmode>div{
+  border: thick solid #AB8000;
+}
+
+.circle>div:nth-child(1){
+transform: rotateY(36deg);
+}
+
+.circle>div:nth-child(2){
+transform: rotateY(72deg);
+}
+
+.circle>div:nth-child(3){
+transform: rotateY(100deg);
+}
+
+.circle>div:nth-child(4){
+transform: rotateY(144deg);
 }
 
 @media only screen and (max-width:1300px) {
@@ -396,7 +468,16 @@ box-shadow: 0 0 5px #999;
 
   .profile-img{
     margin: auto;
+    text-align: center;
+  }
+
+  .container-effect{
+    margin: auto;
+  }
+
+  .details{
     display: block;
+    width: 100%;
   }
 
   .sec{

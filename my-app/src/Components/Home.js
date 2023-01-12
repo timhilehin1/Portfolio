@@ -7,7 +7,6 @@ import {TbPoint} from "react-icons/tb";
 import { MdOutlineWorkOutline } from "react-icons/md";
 import { BsCodeSlash } from "react-icons/bs";
 import { TbSend } from "react-icons/tb";
-import image1 from "../images/plain.png"
 import image2 from "../images/home-img.png";
 import {Link} from 'react-router-dom';
 import CV from "../images/TIMICV.pdf"
@@ -78,9 +77,16 @@ function Home(prop){
       <h4 style={{fontWeight:"600"}} className="text-center mt-5">About me</h4>
       <h6 style={{fontWeight:"400"}} className="text-center">Introduction to Timiverse</h6>
 
-      <div className="details d-block d-lg-flex  justify-content-between">
+      <div className="details">
         <div className="profile-img">
-        <img className="img-fluid profile-img  image  ms-lg-5" alt="" src={image1} />
+        <div class="container-effect">
+    <div  className={mode ? "circle" : "circle circle-lightmode"}>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+     </div>
         </div>
 
         <div className="mt-3  text-center text-box text-center text-lg-center test">
@@ -88,8 +94,11 @@ function Home(prop){
 
           <div className="experience text-center  mt-5 d-flex justify-content-center gap-lg-5 gap-3">
            <div className=""> <h6 className="text-center sec">01+ <span className="d-block text-center"> Years </span> Experience </h6> </div>
-           <div className="">  <h6 className="text-center sec">06+ <span className="d-block text-center"> Projects </span> Completed </h6> </div>
-           <div className=""><h6 className="text-center sec">02+ <span className="d-block text-center"> Companies </span> worked </h6> </div> 
+
+         <Link style= {{ textDecoration : "none", color: mode ? "white" : "black"}} to="/Portfolio"><div className="">  <h6  className="text-center sec">06+ <span className="d-block text-center"> Projects </span> Completed </h6> </div></Link>
+
+
+           <div className=""><h6  onClick={displayWork} className="text-center sec">02+ <span className="d-block text-center"> Companies </span> worked </h6> </div> 
           </div>
 
           <div className="text-center  mt-4">
@@ -142,7 +151,7 @@ function Home(prop){
       <div>
         <h6 className="">Front-end Developer</h6>
         <p>Neptune Software Group</p>
-        <p><AiOutlineCalendar/> 2022</p>
+        <p><AiOutlineCalendar/> 2022 - present</p>
       </div>
 
     </div>
