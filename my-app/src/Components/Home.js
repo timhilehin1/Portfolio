@@ -98,7 +98,7 @@ function Home(prop){
          <Link style= {{ textDecoration : "none", color: mode ? "white" : "black"}} to="/Portfolio"><div className="">  <h6  className="text-center sec">06+ <span className="d-block text-center"> Projects </span> Completed </h6> </div></Link>
 
 
-           <div className=""><h6  onClick={displayWork} className="text-center sec">02+ <span className="d-block text-center"> Companies </span> worked </h6> </div> 
+          <div className=""><h6  onClick={displayWork} className="text-center sec">02+ <span className="d-block text-center"> Companies </span> worked </h6> </div> 
           </div>
 
           <div className="text-center  mt-4">
@@ -111,7 +111,7 @@ function Home(prop){
     </div>
 
 
-    <div  className="qualfications mt-5">
+    <div  className="qualfications mt-5" id="work">
       <h4  style={{fontWeight:"600"}} className="text-center mt-5"> Qualification</h4>
 
       <div className="headers d-flex gap-4 mt-3 justify-content-center">
