@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.8ec4ea54.css",
+    "main.js": "/Portfolio/static/js/main.9f134600.js",
+    "static/js/787.28cb0dcd.chunk.js": "/Portfolio/static/js/787.28cb0dcd.chunk.js",
+    "static/media/Newcastle.png": "/Portfolio/static/media/Newcastle.97b08dd533f5769a0c5d.png",
+    "static/media/TM.png": "/Portfolio/static/media/TM.4cb1aeb240741b7ce5c9.png",
+    "static/media/Quizical.png": "/Portfolio/static/media/Quizical.fd69f94b2fdff46d3d7c.png",
+    "static/media/musical.png": "/Portfolio/static/media/musical.36f0242820fae4bdfa95.png",
+    "static/media/TIMICV.pdf": "/Portfolio/static/media/TIMICV.c4a36a2752431c604648.pdf",
+    "static/media/home-img.png": "/Portfolio/static/media/home-img.a9135c50041e072bdf5b.png",
+    "index.html": "/Portfolio/index.html",
+    "main.8ec4ea54.css.map": "/Portfolio/static/css/main.8ec4ea54.css.map",
+    "main.9f134600.js.map": "/Portfolio/static/js/main.9f134600.js.map",
+    "787.28cb0dcd.chunk.js.map": "/Portfolio/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8ec4ea54.css",
+    "static/js/main.9f134600.js"
+  ]
+}
