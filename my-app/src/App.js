@@ -18,6 +18,10 @@ function App(){
   const [style, setStyle] = useState(".bottom-content")
   const [pathName, setPathName] = useState("")
 
+  console.log(mode)
+
+  console.log(JSON.parse(sessionStorage.getItem("mode"))) 
+
   // console.log(pathName)
   useEffect(()=>{
     window.scrollTo(0, 0);
@@ -68,7 +72,7 @@ useEffect(()=>{
       </Routes>
     
        <>
-      <footer className={ mode ?"footer text-center mt-5" : "footer-lightmode text-center mt-5"}>
+      <footer className={ mode ? "footer text-center mt-5" : "footer-lightmode text-center mt-5"}>
     <div className="social-links d-flex gap-4 justify-content-center">
     <p className="social-icon"><a style={{color:"white"}} href="https://www.linkedin.com/in/timilehin-oladapo-919267199"><AiFillLinkedin/></a></p>
     <p className="social-icon"><a style={{color:"white"}} href="https://github.com/timhilehin1"><AiOutlineGithub/></a></p>

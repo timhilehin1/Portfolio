@@ -3,6 +3,10 @@
   color:  rgb(28, 32, 34);
 }
 
+.first{
+  z-index: -1000;
+}
+
 .dark{
   background-color:rgb(28, 32, 34);
   color: rgb(250, 250, 250) ;
@@ -293,6 +297,7 @@ box-shadow: 0 0 5px #999;
   bottom: 0;
   width: 100%;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  z-index: 1000;
 }
 
 .bottom-nav-lightmode{
@@ -301,6 +306,7 @@ box-shadow: 0 0 5px #999;
   bottom: 0;
   width: 100%;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  z-index: 1000;
 }
 
 .bottom-content{
@@ -313,7 +319,7 @@ box-shadow: 0 0 5px #999;
   bottom: 0;
   width: 100%;
   height: 8rem;
-  z-index: 1;
+  z-index: 1000;
   border-radius: .5rem;
   transition: 0.4s ease-in;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -328,7 +334,7 @@ box-shadow: 0 0 5px #999;
   bottom: 0;
   width: 100%;
   height: 8rem;
-  z-index: 1;
+  z-index: 1000;
   border-radius: .5rem;
   transition: 0.4s ease-in;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -347,72 +353,14 @@ box-shadow: 0 0 5px #999;
   display: grid;
   grid-template-columns: auto 1fr;
   width: 90%;
+
 }
 
-.container-effect{
-  width: 15rem;
-  height: 15rem;
-  border-radius: 50%;
-}
 
-.circle{
-  width: 13rem;
-  height: 13rem;
-  border: thick solid white;
-  border-radius: 50%;
-  animation: anim 10s infinite;
-  transform-style: preserve-3d;
-  perspective: 1000px;
-}
-
-.circle-lightmode{
-  border: thick solid #AB8000;
-}
-
-@keyframes anim{
-
-  from{
-      transform: rotateY(-360deg) rotateZ(-360deg);
-  }
-
-  to{
-      transform: rotateY(360deg) rotateZ(360deg);
-  }
-}
-
-.circle>div{
-  width: 13rem;
-  height: 13rem;
-  border: thick solid white;
-  border-radius: 50%;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
-.circle-lightmode>div{
-  border: thick solid #AB8000;
-}
-
-.circle>div:nth-child(1){
-transform: rotateY(36deg);
-}
-
-.circle>div:nth-child(2){
-transform: rotateY(72deg);
-}
-
-.circle>div:nth-child(3){
-transform: rotateY(100deg);
-}
-
-.circle>div:nth-child(4){
-transform: rotateY(144deg);
-}
 
 @media only screen and (max-width:1300px) {
+
+ 
   
   .main{
     padding: 1rem 5rem 3rem 5rem;
@@ -430,12 +378,16 @@ transform: rotateY(144deg);
     padding: 1rem 5rem 0 5rem;
   }
 
+
+
 }
 
 
 
 
-@media only screen and (max-width: 992px) {
+
+
+@media only screen and (max-width: 767px) {
 
   body {
     font-size: 14px;
@@ -469,10 +421,7 @@ transform: rotateY(144deg);
   .profile-img{
     margin: auto;
     text-align: center;
-  }
-
-  .container-effect{
-    margin: auto;
+    z-index: -999;
   }
 
   .details{

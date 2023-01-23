@@ -10,6 +10,7 @@ import { TbSend } from "react-icons/tb";
 import image2 from "../images/home-img.png";
 import {Link} from 'react-router-dom';
 import CV from "../images/TIMICV.pdf"
+import profile from '../images/profile.png'
 
 function Home(prop){
 
@@ -54,7 +55,7 @@ function Home(prop){
     <h3 style={{fontWeight:"600"}}>Hi, I'm Timilehin</h3>
     <p  style={{fontWeight:"600"}}>Front-end Developer</p>
 
-    <p>With real and true love for responsive and beautiful interface websites.</p>
+    <p>With high level experience in website development and optimization.</p>
 
  <Link to="/Contact"><button className="contact-btn-lightmode">Contact me <TbSend/></button></Link> 
   </div>
@@ -68,7 +69,7 @@ function Home(prop){
     <h3 style={{fontWeight:"600"}}>Hi, I'm Timilehin</h3>
     <p style={{fontWeight:"600"}}>Front-end Developer</p>
 
-    <p>With real and true love for responsive and beautiful interface websites.</p>
+    <p>With high level experience in website development and optimization.</p>
 
     <Link to="/Contact"><button className= "contact-btn-lightmode">Contact me <TbSend/></button></Link> 
   </div>
@@ -79,18 +80,11 @@ function Home(prop){
 
       <div className="details">
         <div className="profile-img">
-        <div class="container-effect">
-    <div  className={mode ? "circle" : "circle circle-lightmode"}>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
-     </div>
+     <img className="img-fluid image" src={profile}/>
         </div>
 
-        <div className="mt-3  text-center text-box text-center text-lg-center test">
-          <p>I get fascinated when i see how things work behind the scenes in any given field. This has fueled me in my Tech Journey to be inquisitive about new things and to develop a learning mentality.</p>
+        <div className="mt-3  text-center text-box text-lg-center test">
+          <p>I get fascinated when i see how things work behind the scenes, This has inspired me in my Journey to be a front-end developer as i find myself inquisitive about new Technologies and ideas.</p>
 
           <div className="experience text-center  mt-5 d-flex justify-content-center gap-lg-5 gap-3">
            <div className=""> <h6 className="text-center sec">01+ <span className="d-block text-center"> Years </span> Experience </h6> </div>
