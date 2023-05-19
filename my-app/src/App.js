@@ -18,9 +18,9 @@ function App(){
   const [style, setStyle] = useState(".bottom-content")
   const [pathName, setPathName] = useState("")
 
-  console.log(mode)
+//   console.log(mode)
 
-  console.log(JSON.parse(sessionStorage.getItem("mode"))) 
+//   console.log(JSON.parse(sessionStorage.getItem("mode")))
 
   // console.log(pathName)
   useEffect(()=>{
@@ -46,31 +46,34 @@ useEffect(()=>{
   function closeNav(){
     document.querySelector(style).style.transform = "translateY(1000%)"
   }
-  
+
   return (
       <div className={mode ? "dark" : "light"}>
     <Router>
       <NavBar mode={mode}
               setMode={setMode}/>
-    
+
    <div className="sidebar" >
     </div>
 
-   
+
 
          <Routes>
-        <Route path="/" element={<Home 
+        <Route path="/" element={<Home
                                  mode={mode}
                                  setMode={setMode}
-                                 />}/>
+                  />} />
+
+
         <Route path="/Portfolio" element={<Portfolio
                                            mode={mode}
-                                           setMode={setMode}/>}/>
+                          setMode={setMode} />} />
+            
         <Route path="/Contact" element={<Contact
                                            mode={mode}
                                            setMode={setMode}/>}/>
       </Routes>
-    
+
        <>
       <footer className={ mode ? "footer text-center mt-5" : "footer-lightmode text-center mt-5"}>
     <div className="social-links d-flex gap-4 justify-content-center">
@@ -82,7 +85,7 @@ useEffect(()=>{
     </footer>
 
     <div className={ mode ? "bottom-nav menu align-items-center px-2 d-flex justify-content-between d-md-none" : "bottom-nav-lightmode menu align-items-center px-2 d-flex justify-content-between d-md-none"}>
-    <h5 className="title" >OLADAPO</h5>
+    <h5 className="title">OLADAPO</h5>
 
     <p style={{color:"#ffffff"}} onClick={showNav}><HiMenuAlt2/></p>
     </div>
@@ -103,7 +106,7 @@ useEffect(()=>{
    <Link style= {{ textDecoration : "none", color: "white"}} to="/Portfolio"><p onClick={closeNav}  className={mode ? "title" : "title-lightmode"}>Portfolio <span className="d-block text-center"><AiOutlineFileProtect style={{fontSize:"1.5rem"}}/></span></p></Link>
      </div>
 
-    
+
 
      </div>
      </>

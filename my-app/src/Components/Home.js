@@ -21,7 +21,7 @@ function Home(prop){
     },[])
 
     const [section, setSection] = useState(false)
-    
+
     const work = useRef()
   const education = useRef()
 
@@ -43,7 +43,7 @@ function Home(prop){
         <>
          <div className="App">
     <main className="main">
-    <div className="intro d-flex gap-5 gap-lg-0 justify-content-lg-between">
+    <div className="intro d-flex gap-5 gap-lg-5 ">
 
   <div className="social-links d-block">
     <p className="social-icon"><a style={{color:"#AB8000"}}   href="https://www.linkedin.com/in/timilehin-oladapo-919267199"><AiFillLinkedin/></a></p>
@@ -53,11 +53,11 @@ function Home(prop){
 
   <div className="intro-text d-none d-md-block">
     <h3 style={{fontWeight:"600"}}>Hi, I'm Timilehin</h3>
-    <p  style={{fontWeight:"600"}}>Front-end Developer</p>
+    <p  style={{fontWeight:"600"}}>Front-end Engineer</p>
 
     <p>With high level experience in website development and optimization.</p>
 
- <Link to="/Contact"><button className="contact-btn-lightmode">Contact me <TbSend/></button></Link> 
+ <Link to="/Contact"><button className="contact-btn-lightmode">Contact me <TbSend/></button></Link>
   </div>
 
   <div className="image ms-5 ms-lg-0">
@@ -71,10 +71,10 @@ function Home(prop){
 
     <p>With high level experience in website development and optimization.</p>
 
-    <Link to="/Contact"><button className= "contact-btn-lightmode">Contact me <TbSend/></button></Link> 
+    <Link to="/Contact"><button className= "contact-btn-lightmode">Contact me <TbSend/></button></Link>
   </div>
 
-    <div className="about-me mt-5">
+    <div className="about-me">
       <h4 style={{fontWeight:"600"}} className="text-center mt-5">About me</h4>
       <h6 style={{fontWeight:"400"}} className="text-center">Introduction to Timiverse</h6>
 
@@ -92,7 +92,7 @@ function Home(prop){
          <Link style= {{ textDecoration : "none", color: mode ? "white" : "black"}} to="/Portfolio"><div className="">  <h6  className="text-center sec">06+ <span className="d-block text-center"> Projects </span> Completed </h6> </div></Link>
 
 
-          <div className=""><h6  onClick={displayWork} className="text-center sec">02+ <span className="d-block text-center"> Companies </span> worked </h6> </div> 
+          <div className=""><h6  onClick={displayWork} className="text-center sec">02+ <span className="d-block text-center"> Companies </span> worked </h6> </div>
           </div>
 
           <div className="text-center  mt-4">
@@ -105,7 +105,7 @@ function Home(prop){
     </div>
 
 
-    <div  className="qualfications mt-5" id="work">
+    <div  className="qualfications " id="work">
       <h4  style={{fontWeight:"600"}} className="text-center mt-5"> Qualification</h4>
 
       <div className="headers d-flex gap-4 mt-3 justify-content-center">
@@ -120,7 +120,7 @@ function Home(prop){
       <p><AiOutlineCalendar/> 2017 - 2021</p>
       </div>
 
-      <div className= {mode ? "qualification-line" : "qualification-line-lightmode"}> 
+      <div className= {mode ? "qualification-line" : "qualification-line-lightmode"}>
       </div>
 
       <div>
@@ -139,7 +139,7 @@ function Home(prop){
       <p><AiOutlineCalendar/> 2020</p>
       </div>
 
-      <div className= {mode ? "qualification-line" : "qualification-line-lightmode"}> 
+      <div className= {mode ? "qualification-line" : "qualification-line-lightmode"}>
       </div>
 
       <div>
@@ -152,16 +152,16 @@ function Home(prop){
 
     </div>
 
-    <div className="services mt-5">
+    <div className="services">
 
       <h4  style={{fontWeight:"600"}}  className="text-center">Services</h4>
       <div className="services-container justify-content-center d-flex gap-5">
-       
+
       <div className={ mode ? "services-div front-end" : "services-div-lightmode front-end"}>
         <p className={ mode? "code-icon" : "code-icon-lightmode"}><BsCodeSlash/></p>
         <h6  style={{fontWeight:"600"}}>Frontend Developer</h6>
         <p className="view-lightmode mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal">view more <AiOutlineArrowRight/></p>
-        
+
 
 
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -206,11 +206,11 @@ function Home(prop){
 
     </div>
 
-  
+
     </main>
 
-   
-    
+
+
     </div>
         </>
     )

@@ -13,12 +13,12 @@ useEffect(()=>{
 },[])
 
     return (
-      <>
-     <main className="main">
+      <div className="App z-n1">
+     <main className="main z-n1">
 
       <h5 style={{fontWeight:"600"}} className="text-center">Portfolio</h5>
       <p className="text-center">Recent Works</p>
- 
+
        <div className="d-flex justify-content-center ">
       <div class="card " style={{width: "40rem",backgroundColor: mode ? "rgb(28, 32, 34)" : "#ffffff"}}>
   <img src={musical} class="card-img-top img-fluid w-100" alt="..."/>
@@ -65,7 +65,7 @@ useEffect(()=>{
 
 
      </main>
-     </>
+     </div>
     )
 }
 
