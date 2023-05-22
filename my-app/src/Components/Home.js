@@ -9,7 +9,6 @@ import { BsCodeSlash } from "react-icons/bs";
 import { TbSend } from "react-icons/tb";
 import image2 from "../images/home-img.png";
 import {Link} from 'react-router-dom';
-import CV from "../images/TIMICV.pdf"
 import profile from '../images/profile.png'
 
 function Home(prop){
@@ -98,7 +97,7 @@ function Home(prop){
           </div>
 
           <div className="text-center  mt-4">
-          <a download="TIMICV.pdf" href={CV}><button className= "contact-btn-lightmode">Download CV <HiOutlineDownload/></button></a>
+          <a  href="https://docs.google.com/document/d/1oUXArxff-Mdk2v2gsbcUn9ix9SFFbucG/edit?usp=share_link&ouid=110841655874957962450&rtpof=true&sd=true"><button className= "contact-btn-lightmode">Download CV <HiOutlineDownload/></button></a>
           </div>
         </div>
 
