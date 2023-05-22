@@ -13,14 +13,14 @@ useEffect(()=>{
 },[])
 
     return (
-      <div className="App z-n1">
-     <main className="main z-n1">
+      <div className="App z-n1 ">
+     <main className="main portfolio ">
 
-      <h5 style={{fontWeight:"600"}} className="text-center">Portfolio</h5>
+      <h5 style={{fontWeight:"600"}} className="text-center ">Portfolio</h5>
       <p className="text-center">Recent Works</p>
 
        <div className="d-flex justify-content-center ">
-      <div class="card " style={{width: "40rem",backgroundColor: mode ? "rgb(28, 32, 34)" : "#ffffff"}}>
+      <div class="card  z-n1" style={{width: "40rem",backgroundColor: mode ? "rgb(28, 32, 34)" : "#ffffff"}}>
   <img src={musical} class="card-img-top img-fluid w-100" alt="..."/>
   <div class="card-body">
     <h5 style={{fontWeight:"600"}} class="card-title">Music Player</h5>
@@ -39,7 +39,8 @@ useEffect(()=>{
     <a href="https://timhilehin1.github.io/React_e-commerce-app/"><button class="contact-btn-lightmode">Demo <AiOutlineArrowRight/></button></a>
   </div>
 </div>
-</div>
+                </div>
+
 
 <div className=" mt-4 d-flex justify-content-center">
       <div class="card " style={{width: "40rem",backgroundColor: mode ? "rgb(28, 32, 34)" : "#ffffff"}}>

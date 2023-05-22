@@ -78,7 +78,9 @@ function Home(prop){
       <h4 style={{fontWeight:"600"}} className="text-center mt-5">About me</h4>
       <h6 style={{fontWeight:"400"}} className="text-center">Introduction to Timiverse</h6>
 
-      <div className="details">
+    <div className="details">
+
+
         <div className="profile-img">
      <img className="img-fluid image" src={profile}/>
         </div>

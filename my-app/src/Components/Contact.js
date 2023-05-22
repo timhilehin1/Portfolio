@@ -11,12 +11,12 @@ function Contact(){
 
     return (
 
-        <main className="main">
+        <main className="mainn  mt-5">
 
     <h5 style={{fontWeight:"600"}} className="text-center mt-3">Contact Me</h5>
       <p className="text-center">Get in touch</p>
 
-      
+
      <div className="contact">
       <aside>
         <div className="email d-flex gap-3">
